@@ -1,26 +1,28 @@
 .wrap{
     display: flex;
     transition-duration: 500ms;
-    transform: translate(-250px);
+    transform: translate(-252px);
     text-align: center;
     width: 350px;
     transition-delay: 0.3s;
+    color: white;
 }
 
 .wrap:hover {
     transition-duration: 500ms;
     transform: translate(0);
+    color:inherit;
 }
 
 a{
-    padding-left: 15px;
+    padding-right: 15px;
     text-decoration: none;
-    color: green;
+    color: #ffffff;
     font-weight: 600;
 }
 
 a:focus{
-    color: maroon;
+    color:darkgoldenrod;
     font-weight: 800;
 }
 

@@ -7,7 +7,7 @@ function App() {
     return (
         <BrowserRouter>
             <div className={s.App}>
-                <div>react homeworks:</div>
+                <div>React homeworks:</div>
                 {/*<HW1/>*/}
                 {/*<HW2/>*/}
                 {/*<HW3/>*/}

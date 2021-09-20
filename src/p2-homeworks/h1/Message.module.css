@@ -1,32 +1,24 @@
 .messages{
     display: flex;
     align-items: flex-end;
-    background-color: darkgray;
+    margin: 10px;
 }
 
 .content{
     position: relative;
     display: inline-block;
-    color:#fff;
+    color:black;
     max-width: 260px;
-    background-color: #2e7384;
-    margin: 12px 8px 0px 20px;
-    padding: 7px;
-    border-radius: 6px;
-    word-wrap: break-word;
-    box-shadow: 5px 5px 10px 5px gray;
+    background-color: rgba(229, 243, 243, 0.3);
+    padding: 10px;
+    border-radius: 8px 8px 8px 0;
 }
 
-.content:before {
-    content: "";
-    position: absolute;
-    bottom: 0px;
-    left: -23px;
-    width: 30px;
-    height: 25px;
-    background: radial-gradient(circle at top left, transparent 58%, #2e7384 60%);
+.angle{
+    width: 15px;
+    height: 15px;
+    background: radial-gradient(circle at 0 0,rgba(0, 0, 0, 0) 15px,rgba(229, 243, 243, 0.3)0);
 }
-
 
 .ava{
     display: flex;
@@ -42,11 +34,14 @@
 
 .name{
     font-size: 20px;
+    font-weight: 600;
     text-align: left;
+    padding-bottom: 10px;
 }
 
-.message{
-    margin-top: 10px;
+.text{
+    word-wrap: break-word;
+    text-align: left
 }
 
 .time{
