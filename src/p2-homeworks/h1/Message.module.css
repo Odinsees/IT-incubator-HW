@@ -1,0 +1,78 @@
+.messages{
+    display: flex;
+    align-items: flex-end;
+    background-color: darkgray;
+}
+
+.content{
+    position: relative;
+    display: inline-block;
+    color:#fff;
+    max-width: 260px;
+    background-color: #2e7384;
+    margin: 12px 8px 0px 20px;
+    padding: 7px;
+    border-radius: 6px;
+    word-wrap: break-word;
+    box-shadow: 5px 5px 10px 5px gray;
+}
+
+.content:before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: -23px;
+    width: 30px;
+    height: 25px;
+    background: radial-gradient(circle at top left, transparent 58%, #2e7384 60%);
+}
+
+
+.ava{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.ava img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.name{
+    font-size: 20px;
+    text-align: left;
+}
+
+.message{
+    margin-top: 10px;
+}
+
+.time{
+    text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
