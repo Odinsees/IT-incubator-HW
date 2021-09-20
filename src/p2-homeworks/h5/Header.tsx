@@ -1,21 +1,15 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 import {PATH} from "./Routes";
+import s from "./Header.module.css"
 
 function Header() {
     return (
-        <div>
-            <nav>
-                <div>
-                    <NavLink to={PATH.PRE_JUNIOR} > PreJunior </NavLink>
-                </div>
-                <div>
-                    <NavLink to={PATH.JUNIOR} > Junior </NavLink>
-                </div>
-                <div>
-                    <NavLink to={PATH.JUNIOR_PLUS} > JuniorPlus </NavLink>
-                </div>
-            </nav>
+        <div className={s.wrap}>
+                <NavLink to={PATH.PRE_JUNIOR}> PreJunior </NavLink>
+                <NavLink to={PATH.JUNIOR}> Junior </NavLink>
+                <NavLink to={PATH.JUNIOR_PLUS}> JuniorPlus </NavLink>
+                <div className={s.menu}>| Menu</div>
         </div>
     )
 }
