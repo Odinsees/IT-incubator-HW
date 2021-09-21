@@ -1,4 +1,5 @@
 .App {
     background: url("../../../../src/Image/backgraund.jpg");
+    min-height: 100vh;
     padding: 10px;
 }

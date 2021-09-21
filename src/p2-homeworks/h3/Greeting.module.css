@@ -1,11 +1,67 @@
-.someClass {
+.content {
+    max-width: 350px;
+}
 
+.title{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.inputForm{
+    display: flex;
+}
+
+.inputStandard{
+    width: 50%;
+    border: 3px solid goldenrod;
+    border-radius: 5px;
+}
+
+.addButton {
+    text-align: center;
+    width: 15%;
+    margin: 0 5px 0 5px;
+    border-color: #f1c40f;
+    color: black;
+    background-image: -webkit-linear-gradient(45deg, #79ef4b 50%, transparent 50%);
+    background-image: linear-gradient(45deg, #79ef4b 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+    -webkit-transition: background 300ms ease-in-out;
+    transition: background 300ms ease-in-out;
+    border-radius: 5px;
+}
+
+.addButton:hover {
+    background-position: 0;
+    border-color: green;
+}
+
+.addButtonDisabled{
+    background-color: gray;
+    text-align: center;
+    width: 15%;
+    margin: 0 5px 0 5px;
+    border-color: #f1c40f;
+    color: black;
+    border-radius: 5px;
+}
+
+
+.counter{
+    width: 35%;
+}
+
+.counter span{
+    color:#f1c40f
 }
 
 .error {
-    border: 1px solid red;
+    border: 3px solid red;
 }
 
 .errorMessage{
     color: red;
 }
+
+

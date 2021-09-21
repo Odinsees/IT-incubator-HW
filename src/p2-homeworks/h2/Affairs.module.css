@@ -5,7 +5,7 @@
 .affairs {
     padding: 10px;
     width: 100%;
-    min-height: 110px;
+    min-height: 150px;
     justify-content: center
 }
 
@@ -16,10 +16,31 @@
     justify-content: center;
 }
 
-.filterButtons button{
+.filterButtons button {
     width: 25%;
+    border: 1px solid;
+    margin-right: 5px;
+    border-radius: 5px;
+    background-image: -webkit-linear-gradient(45deg, #b0aeae 50%, transparent 50%);
+    background-image: linear-gradient(45deg, #b0aeae 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+    -webkit-transition: background 300ms ease-in-out;
+    transition: background 300ms ease-in-out;
 }
 
-.active{
-    background: goldenrod;
+.filterButtons button:hover{
+    background-position: 0;
+    border-color: #f1c40f;
+    color: #f1c40f;
+    font-weight: 600;
+}
+
+.filterButtons button:after {
+    background: #fff;
+}
+
+.active {
+    background: #f1c40f;
+    font-weight: 600;
 }
