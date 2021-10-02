@@ -1,14 +1,18 @@
 .content {
-    max-width: 350px;
+    max-width: 400px;
+    padding: 20px;
 }
 
 .title{
     font-size: 20px;
     font-weight: 600;
+    padding-bottom: 5px;
+    color: white;
 }
 
 .inputForm{
     display: flex;
+    text-align: center;
 }
 
 .inputStandard{
@@ -50,10 +54,11 @@
 
 .counter{
     width: 35%;
+    font-size: 20px;
 }
 
 .counter span{
-    color:#f1c40f
+    color:#f1c40f;
 }
 
 .error {
