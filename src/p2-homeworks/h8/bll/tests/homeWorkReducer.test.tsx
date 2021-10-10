@@ -20,14 +20,23 @@ test('sort name up', () => {
 
     console.log(newState)
     // expect(...).toBe(...)
+    expect(newState[0].name).toBe('Александр')
+    expect(newState[newState.length-1].name).toBe('Кот')
+
 })
 test('sort name down', () => {
     const newState = homeWorkReducer(initialState, sortDownAC())
+
+    expect(newState[0].name).toBe('Кот')
+    expect(newState[newState.length-1].name).toBe('Александр')
 
 
 })
 test('check age 18', () => {
     const newState = homeWorkReducer(initialState, checkUserAgeAC(18))
+
+    expect(newState.length).toBe(4)
+    expect(newState.map(user => user.age > 18)).toStrictEqual([true, true, true, true])
 
 
 })
