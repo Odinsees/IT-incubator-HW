@@ -17,6 +17,7 @@ input[type="range"] {
     outline: none !important;
     background: transparent;
 }
+
 .min-max-slider > input.min {
     background-image: linear-gradient(
             to right,

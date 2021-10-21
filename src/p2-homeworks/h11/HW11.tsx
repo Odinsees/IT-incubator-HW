@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import SuperRange from './common/c7-SuperRange/SuperRange'
-import {Slider} from "./common/c8-SuperDoubleRange/SuperDoubleRange";
+import {SuperDoubleRange} from "./common/c8-SuperDoubleRange/SuperDoubleRange";
 
 
 function HW11() {
@@ -22,13 +22,9 @@ function HW11() {
                 />
             </div>
 
-            <div style={{width:'300px'}}>
+            <div>
                 <span>{value1}</span>
-                {/*<SuperDoubleRange
-                    // сделать так чтоб value1 и value2 изменялось
-                    value={[value1,value2]}
-                />*/}
-                <Slider
+                <SuperDoubleRange
                     minValue={value1}
                     onChangeRangeMinValue={setValue1}
                     onChangeRangeMaxValue={setValue2}

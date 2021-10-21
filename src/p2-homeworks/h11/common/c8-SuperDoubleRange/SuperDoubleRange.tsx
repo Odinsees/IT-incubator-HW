@@ -36,12 +36,12 @@ type DefaultInputPropsType = DetailedHTMLProps<InputHTMLAttributes<HTMLInputElem
 
 type PropsType = DefaultInputPropsType & {
     minValue: number
-    maxValue:number
+    maxValue: number
     onChangeRangeMinValue?: (value: number) => void
     onChangeRangeMaxValue?: (value: number) => void
 }
 
-export const Slider: React.FC<PropsType> = (
+export const SuperDoubleRange: React.FC<PropsType> = (
     {
         type, // достаём и игнорируем чтоб нельзя было задать другой тип инпута
         onChange, onChangeRangeMinValue,
